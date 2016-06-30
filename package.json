@@ -1,0 +1,27 @@
+{
+  "name": "webhook2exec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "config": {
+    "host": "localhost",
+    "port": 3001,
+    "script": "test/fixtures/test.sh",
+    "secret": "secret_key"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.2",
+    "gulp-plumber": "^1.1.0",
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
+  }
+}
